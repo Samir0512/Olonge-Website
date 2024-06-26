@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 auto;
+} */
+*/
+
+/* Header styles */
+header {
+  background-color: #ffffff; /* Цвет фона хэдера */
+  color: #000; /* Цвет текста */
+  padding: 10px 0; /* Поля сверху и снизу */
+  position: relative;
+  z-index: 1000; /* Устанавливаем высокий z-index */
+}
+
+.container {
+  display: flex; /* Расположение элементов в строку */
+  justify-content: space-between; /* Распределение пространства между элементами */
+  align-items: center; /* Выравнивание по центру по вертикали */
+}
+
+.logo {
+  width: 206px;
+  height: 101.76px;
+}
+
+nav ul {
+  list-style-type: none; /* Убираем маркеры у списка */
+  padding: 0; /* Убираем внутренние отступы у списка */
+  display: flex; /* Расположение элементов в строку */
+}
+
+nav ul li {
+  margin-right: 20px; /* Отступ между элементами меню */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Убираем отступ у последнего элемента меню */
+}
+
+nav ul li a {
+  font-family: "Montserrat", sans-serif; /* Шрифт Montserrat */
+  font-weight: 600; /* Толщина шрифта */
+  font-size: 16px; /* Размер шрифта */
+  line-height: 28px; /* Межстрочный интервал */
+  color: black; /* Цвет текста кнопок */
+  text-decoration: none; /* Убираем подчеркивание текста ссылок */
+}
+
+nav ul li a.home-button {
+  font-weight: 600; /* Толщина шрифта */
+  font-size: 16px; /* Размер шрифта */
+  line-height: 28px; /* Межстрочный интервал */
+  color: #fa4a0c; /* Цвет текста кнопки */
+  padding: 10px 20px; /* Внутренние отступы кнопки */
+}
+
+/* Main section styles */
+.full-width {
+  position: relative;
+  background-image: url("/food.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 619px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.foodpng {
+  width: 100%;
+  height: 619px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.content {
+  text-align: center; /* Выравниваем текст по центру */
+  position: relative; /* Позиционируем контент относительно секции */
+  z-index: 1; /* Поднимаем контент над фоновым изображением */
+}
+.foodpng {
+  width: 1440px;
+  height: 619px;
+  margin-left: -110px;
+  z-index: 0;
+}
+.overlay-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  color: white;
+}
+
+.main-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  color: white;
+  z-index: 1;
+}
+
+.download-text {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #f6f6f6;
+}
+
+/* Добавьте стили для кнопок загрузки */
+.container-tell1 {
+  display: flex;
+  z-index: 100 !important;
+  justify-content: center;
+  align-items: center;
+  /* Высота секции равна высоте видимой области экрана */
+  margin-top: -250px; /* Пример отрицательного отступа сверху */
+}
+
+.container-tell1 img {
+  max-width: 100%; /* Изображение не будет превышать ширину секции */
+  max-height: 100%; /* Изображение не будет превышать высоту секции */
+}
+.container-HR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-top: -50px; /* Пример отрицательного отступа сверху */
+}
+
+.container-HR img {
+  max-width: 100%; /* Изображение не будет превышать ширину секции */
+  max-height: 100%; /* Изображение не будет превышать высоту секции */
+}
+
+.how-it-works-text {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  text-align: center;
+  opacity: 0.8;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.container-tel2,
+.container-tel2-reverse {
+  display: flex;
+  align-items: center;
+  margin: 20px 0; /* Add margin for spacing */
+}
+
+.container-tel2 .image-container,
+.container-tel2-reverse .image-container {
+  width: 400px;
+  height: 525px;
+  margin-right: 20px;
+}
+
+.container-tel2-reverse .image-container {
+  margin-right: 0; /* Remove right margin */
+  margin-left: 20px; /* Add left margin */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.text-container {
+  width: 568px; /* Fixed width for text */
+  height: auto; /* Height to hug the content */
+}
+
+h1 {
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fa4a0c;
+}
+
+h5 {
+  font-family: Montserrat;
+  font-size: 40px;
+  line-height: 57px;
+  font-weight: 700;
+}
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+/* Main section styles */
+.desktop {
+  position: relative;
+  background-image: url("/kone.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 619px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+/* Дополнительные стили для текста */
+.download-text2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+}
+
+.Available-text {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+}
+.download-button {
+  width: 142px;
+  height: 64px;
+  padding: 18px 31px;
+  gap: 10px;
+  border-radius: 32px;
+  opacity: 0;
+  background-color: #fa4a0c;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+/* Footer styles */
+footer {
+  background-color: #ffffff;
+  color: #000;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo2 {
+  width: 246px;
+  height: 102px;
+  margin-left: 20px;
+}
+/* .footer-logo img {
+    width: auto; 
+    height: 100%; 
+  } */
+.twitter {
+  width: 49.9px;
+  height: 49.9px;
+}
+.footer-social {
+  display: flex; /* Расположение иконок в строку */
+  gap: 24px; /* Отступ между иконками */
+}
+
+.footer-social img {
+  width: 24px; /* Ширина иконок */
+  height: 24px; /* Высота иконок */
+}
+
+.footer-text {
+  font-family: "Roboto", sans-serif; /* Шрифт Roboto */
+  font-weight: 700; /* Толщина шрифта */
+  font-size: 12px; /* Размер шрифта */
+  line-height: 18px; /* Межстрочный интервал */
+  margin: 0;
+}
