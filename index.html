@@ -1,133 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Olonge Website</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="container">
-      <a href="#logo"><img class="logo" src="/logo.png" alt="Logo" /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Olonge Website</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="#logo"><img class="logo" src="/assets/img/logo.png" alt="Logo" /></a>
       <nav>
-        <ul>
-          <li><a href="#home" class="home-button">Home</a></li>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul id="nav-links">
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </header>
-    <main>
-      <section id="home" class="full-width">
-        <div class="content">
-          <!-- <img class="foodpng" src="/food.png" alt="Food Image"> -->
-          <h3 class="overlay-text">Food app</h3>
-          <h2 class="main-text">Why stay hungry</h2>
-          <h2 class="main-text">when you can order from Bella Onojie</h2>
-          <h4 class="download-text">
-            Download the Bella Onojie’s food app now on
-          </h4>
-          <div class="download-buttons">
-            <!-- Ваши кнопки загрузки -->
-          </div>
-        </div>
-      </section>
+    </div>
+  </header>
 
-      <section id="tell1" class="container-tell1">
-        <img src="tell1.png" alt="" />
-      </section>
-      <section id="HR" class="container-HR">
-        <img src="HR.png" alt="" />
-      </section>
-      <section id="how-it-works" class="container">
-        <h3 class="how-it-works-text">How the app works</h3>
-      </section>
-      <section id="" class="container-tel2 d-flex justify-content-center">
-        <div class="image-container">
-          <img src="/tell2.png" alt="" />
+  <main>
+    <section id="home" class="full-width">
+      <div class="content">
+        <h3 class="overlay-text">Food app</h3>
+        <h2 class="main-text">Why stay hungry</h2>
+        <h2 class="main-text">when you can order from Bella Onojie</h2>
+        <h4 class="download-text">Download the Bella Onojie’s food app now on</h4>
+        <div class="download-buttons">
+          <a href="#" class="download-button">Playstore</a>
+          <a href="#" class="download-button download-button-transparent">App store</a>
         </div>
-        <div class="text-container">
-          <h1>Create an account</h1>
-          <h5>Create/login to an existing account to get started</h5>
-          <h6>An account is created with your email and a desired password</h6>
-        </div>
-      </section>
-      <section
-        id=""
-        class="container-tel2-reverse d-flex justify-content-center"
-      >
-        <div class="text-container">
-          <h1>Explore varieties</h1>
-          <h5>Shop for your favorites meal as e dey hot.</h5>
-          <h6>
-            Shop for your favorite meals or drinks and enjoy while doing it.
-          </h6>
-        </div>
-        <div class="image-container">
-          <img src="/tell3.png" alt="" />
-        </div>
-      </section>
-      <section id="" class="container-tel2 d-flex justify-content-center">
-        <div class="image-container">
-          <img src="/tell4.png" alt="" />
-        </div>
-        <div class="text-container">
-          <h1>Checkout</h1>
-          <h5>When you're done check out and get it delivered.</h5>
-          <h6>When you're done check out and get it delivered with ease.</h6>
-        </div>
-      </section>
-      <section id="home" class="desktop">
-        <div class="content2">
-          <h3 class="download-text2">Download the app now.</h3>
-          <h4 class="available-text">
-            Available on your favorite store. Start your premium experience now
-          </h4>
-          <div class="download-buttons">
-            <a href="#" class="download-button">Button 1</a>
-            <a href="#" class="download-button">Button 2</a>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-content container">
-        <div class="footer-logo">
-          <a href="#logo"><img class="logo2" src="/logo.png" alt="Logo" /></a>
-        </div>
-        <div class="footer-social">
-          <a href="#"
-            ><img class="twitter" src="/twitter.png" alt="Twitter"
-          /></a>
-          <a href="#"
-            ><img class="facebook" src="/facebook.png" alt="Facebook"
-          /></a>
-          <a href="#"><img class="insta" src="/insta.png" alt="Instagram" /></a>
-        </div>
-        <p class="footer-text">Copyright 2020 Bella Onojie.com</p>
       </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="scripts.js"></script>
-  </body>
+    </section>
+
+    <section id="tell1" class="container-tell1">
+      <img src="/assets/img/tell1.png" alt="" />
+    </section>
+
+    <section id="HR" class="container-HR">
+      <img src="/assets/img/HR.png" alt="" />
+    </section>
+
+    <section id="how-it-works" class="container">
+      <h3 class="how-it-works-text">How the app works</h3>
+    </section>
+
+    <section id="tel2" class="container-tel2 d-flex justify-content-center">
+      <div class="image-container">
+        <img src="/assets/img/tell2.png" alt="" />
+      </div>
+      <div class="text-container">
+        <h1>Create an account</h1>
+        <h5>Create/login to an existing account to get started</h5>
+        <h6>An account is created with your email and a desired password</h6>
+      </div>
+    </section>
+
+    <section id="tel3" class="container-tel2-reverse d-flex justify-content-center">
+      <div class="text-container">
+        <h1>Explore varieties</h1>
+        <h5>Shop for your favorites meal as e dey hot.</h5>
+        <h6>Shop for your favorite meals or drinks and enjoy while doing it.</h6>
+      </div>
+      <div class="image-container">
+        <img src="/assets/img/tell3.png" alt="" />
+      </div>
+    </section>
+
+    <section id="tel4" class="container-tel2 d-flex justify-content-center">
+      <div class="image-container">
+        <img src="/assets/img/tell4.png" alt="" />
+      </div>
+      <div class="text-container">
+        <h1>Checkout</h1>
+        <h5>When you're done check out and get it delivered.</h5>
+        <h6>When you're done check out and get it delivered with ease.</h6>
+      </div>
+    </section>
+
+    <section id="home" class="desktop">
+      <div class="content2">
+        <h3 class="download-text2">Download the app now.</h3>
+        <h4 class="available-text">Available on your favorite store. Start your premium experience now</h4>
+        <div class="download-buttons-2">
+          <a href="#" class="download-button square-button">Playstore</a>
+          <a href="#" class="download-button-transparent-2">App store</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content container">
+      <div class="footer-logo">
+        <a href="#logo"><img class="logo2" src="/assets/img/logo.png" alt="Logo" /></a>
+      </div>
+      <div class="footer-social">
+        <a href="#"><img class="twitter" src="/assets/img/twitter.png" alt="Twitter" /></a>
+        <a href="#"><img class="facebook" src="/assets/img/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img class="insta" src="/assets/img/insta.png" alt="Instagram" /></a>
+      </div>
+      <p class="footer-text">Copyright 2020 Bella Onojie.com</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+
+  <script>
+    function toggleMenu() {
+      var navLinks = document.getElementById("nav-links");
+      navLinks.classList.toggle("active");
+    }
+  </script>
+</body>
 </html>
