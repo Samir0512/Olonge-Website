@@ -323,7 +323,6 @@ h5 {
 .logo2 {
   width: 246px;
   height: 102px;
-  margin-left: 100px;
 }
 
 .footer-social {
@@ -342,7 +341,6 @@ h5 {
   font-size: 12px;
   line-height: 18px;
   margin: 0;
-  margin-right: 100px;
 }
 
 @media (max-width: 758px) {
