@@ -133,7 +133,7 @@ nav ul li a:hover {
 }
 
 .download-button:hover {
-  background-color: #1d0f0a;
+  background-color: #b4380a;
   color: #ffffff;
 }
 
@@ -282,23 +282,17 @@ h5 {
 }
 
 .download-buttons-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 20px;
+  border-radius: 10px;
 }
 
-.download-buttons-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
 
-.download-buttons-2 .download-button-2,
-.download-buttons-2 .download-button-transparent-2 {
+
+.download-button-2 {
   width: 200px;
   height: 60px;
+  background-color: #fa4a0c;
+  color: white;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
@@ -310,25 +304,23 @@ h5 {
   margin: 0 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-.download-buttons-2 .download-button-2 {
-  background-color: #fa4a0c;
-  color: white;
-}
-
-.download-buttons-2 .download-button-2:hover {
-  background-color: #0a0806;
-  color: #da1717;
-}
-
-.download-buttons-2 .download-button-transparent-2 {
-  background-color: transparent;
-  border: 2px solid #ffffff;
+.download-button-2:hover {
+  background-color: #b4380a;
   color: #ffffff;
 }
 
-.download-buttons-2 .download-button-transparent-2:hover {
-  background-color: rgba(236, 87, 87, 0.2);
+
+
+.download-button-transparent-2 {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-button-transparent-2:hover {
+  background-color: rgba(255, 255, 255, 0.2);
   color: #fa4a0c;
 }
 .footer {
