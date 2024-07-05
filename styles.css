@@ -12,29 +12,31 @@ body {
 
 
 header {
-  display: flex;
-  justify-content: space-around;
-  height: 100%; 
   background-color: #ffffff;
   color: #000;
-  /* padding: 10px 0; */
-  /* position: relative; */
-  /* z-index: 1000; */
 }
 
-
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
 
 .logo {
   width: 206px;
   height: 101.76px;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
   display: flex;
- 
-  
 }
 
 nav ul li {
@@ -56,6 +58,19 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #FA4A0C;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-menu div {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 4px 0;
 }
 
 .full-width {
@@ -138,6 +153,26 @@ nav ul li a:hover {
   color: #fa4a0c;
 }
 
+
+.container-tell1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -250px;
+}
+
+.container-tell1 img {
+  max-width: 100%;
+}
+.custom-element {
+  width: 884px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  border-top: 3px solid #ff0000; 
+  
+ 
+}
 #HR,
 #how-it-works {
   margin-top: 40px; 
@@ -154,7 +189,6 @@ nav ul li a:hover {
 .container-HR img {
   max-width: 100%;
 }
-
 .how-it-works-text {
   width: 100%;
   font-family: "Poppins", sans-serif;
@@ -283,8 +317,8 @@ h5 {
 }
 
 .download-buttons-2 .download-button:hover {
-  background-color: #a13206;
-  color: #ffffff;
+  background-color: #0a0806;
+  color: #da1717;
 }
 
 .download-buttons-2 .download-button-transparent-2 {
@@ -335,40 +369,37 @@ h5 {
 }
 
 @media (max-width: 758px) {
-  .hamburger-menu {
-    display: flexbox;
-    cursor: pointer;
-
-  }
-  .container-tell1{
-    display: flex;
-    align-items: center;
-    margin-top: auto;
-  }
-  
-  
-  .hamburger-menu div {
-    width: 30px;
-    height: 3px;
-    background-color: black;
-    margin: 6px 0;
-  }
-
-  nav ul {
+  .header-content {
     flex-direction: column;
-    align-items: center;
-    display: none;
-  }
+    align-items: flex-start;
+    
+}
 
-  nav ul.active {
+.hamburger-menu {
     display: flex;
-  }
+}
 
-  nav ul li {
+nav ul {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+}
+
+nav ul.active {
+    display: flex;
+    
+}
+
+nav ul li {
     margin-right: 0;
     margin-bottom: 10px;
-  }
+    
+}
 
+nav ul li:last-child {
+    margin-bottom: 0;
+    
+}
   .full-width {
     height: auto;
     padding: 50px 0;
@@ -377,7 +408,7 @@ h5 {
   .main-text {
     font-size: 32px;
   }
-
+  
   .download-buttons {
     flex-direction: column;
     align-items: center;
@@ -390,6 +421,16 @@ h5 {
 .container-tell1{
   width: 450px;
   height: auto;
+  display: flex;
+  justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+.how-it-works-text{
+  font-size: 32px;
+}
+h5{
+  font-size: 25px;
 }
   .container-tel2, .container-tel2-reverse {
     display: flex;
@@ -414,6 +455,13 @@ h5 {
     width: 150px;
     height: auto;
   }
+  .download-text2{
+    font-size: 32px;
+  }
+  .available-text{
+    font-size: 15px;
+  }
+  
 }
 
 @media (min-width: 758px) {
