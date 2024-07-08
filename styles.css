@@ -8,6 +8,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* Header Styles */
 header {
   background-color: #ffffff;
   color: #000;
@@ -17,7 +18,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
 }
 
 .logo {
@@ -70,6 +70,7 @@ nav ul li a:hover {
   margin: 4px 0;
 }
 
+/* Full-width Section */
 .full-width {
   background-image: url("/assets/img/food.png");
   background-size: cover;
@@ -79,11 +80,9 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .content {
-  z-index: 100!important;
   text-align: center;
   z-index: 1;
 }
@@ -116,7 +115,7 @@ nav ul li a:hover {
 }
 
 .download-button {
-    width: 200px;
+  width: 200px;
   height: 60px;
   background-color: #fa4a0c;
   color: white;
@@ -149,31 +148,12 @@ nav ul li a:hover {
   color: #fa4a0c;
 }
 
-
-.container-tell1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -250px;
-}
-
-.container-tell1 img {
-  z-index: 10!important;
-  max-width: 100%;
-}
-.custom-element {
-  width: 884px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  border-top: 3px solid #ff0000; 
-  
- 
-}
+/* Section Containers */
 #HR,
 #how-it-works {
-  margin-top: 40px; 
+  margin-top: 40px;
 }
+
 .container-tell1,
 .container-HR {
   display: flex;
@@ -184,8 +164,11 @@ nav ul li a:hover {
 
 .container-tell1 img,
 .container-HR img {
+  z-index: 10!important;
   max-width: 100%;
 }
+
+/* Text Containers */
 .how-it-works-text {
   width: 100%;
   font-family: "Poppins", sans-serif;
@@ -238,6 +221,7 @@ h5 {
   font-weight: 700;
 }
 
+/* Desktop Section */
 .desktop {
   position: relative;
   background-image: url("/assets/img/kone.png");
@@ -248,7 +232,6 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: -1;
 }
 
 .desktop::before {
@@ -259,7 +242,7 @@ h5 {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5); 
-  z-index: -1;
+  z-index: 0;
 }
 
 .content2 {
@@ -276,17 +259,17 @@ h5 {
 }
 
 .available-text {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 500;
 }
 
 .download-buttons-2 {
   margin-top: 20px;
-  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
-
-
 
 .download-button-2 {
   width: 200px;
@@ -296,25 +279,22 @@ h5 {
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   border-radius: 10px;
-  margin: 0 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .download-button-2:hover {
   background-color: #b4380a;
   color: #ffffff;
 }
 
-
-
 .download-button-transparent-2 {
   background-color: transparent;
   border: 2px solid #ffffff;
-  border-radius: 10px;
   color: #ffffff;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -323,6 +303,8 @@ h5 {
   background-color: rgba(255, 255, 255, 0.2);
   color: #fa4a0c;
 }
+
+/* Footer Styles */
 .footer {
   background-color: #ffffff;
   color: #000;
@@ -357,34 +339,32 @@ h5 {
   margin: 0;
   flex-wrap: wrap;
 }
+
+/* Media Queries */
 @media (max-width: 758px) {
-  
-
-.hamburger-menu {
+  .hamburger-menu {
     display: flex;
-}
+  }
 
-nav ul {
+  nav ul {
     flex-direction: column;
     width: 100%;
     display: none;
-}
+  }
 
-nav ul.active {
+  nav ul.active {
     display: flex;
-    
-}
+  }
 
-nav ul li {
+  nav ul li {
     margin-right: 0;
     margin-bottom: 10px;
-    
-}
+  }
 
-nav ul li:last-child {
+  nav ul li:last-child {
     margin-bottom: 0;
-    
-}
+  }
+
   .full-width {
     height: auto;
     padding: 50px 0;
@@ -403,24 +383,26 @@ nav ul li:last-child {
     width: 30%;
     margin: 10px 0;
   }
-  
 .container-tell1{
   width: 300px;
-  height: auto;
-    margin-top: -120px;
+  margin-top: -120px;
 }
-.how-it-works-text{
-  font-size: 32px;
-}
-h1{
-  font-size: 19px;
-}
-h5{
-  font-size: 22px;
-}
-h6{
-  font-size: 15px;
-}
+  .how-it-works-text {
+    font-size: 32px;
+  }
+
+  h1 {
+    font-size: 19px;
+  }
+
+  h5 {
+    font-size: 22px;
+  }
+
+  h6 {
+    font-size: 15px;
+  }
+
   .container-tel2, .container-tel2-reverse {
     display: flex;
     align-items: center;
@@ -428,37 +410,39 @@ h6{
     flex-direction: column;
   }
 
-  /* .image-container {
-    width: 20%;
-    margin-bottom: 20px;
-  } */
-
   .text-container {
     width: 100%;
     text-align: center;
     font-size: 28px;
-    
   }
 
   .logo2 {
     width: 150px;
     height: auto;
   }
-  .download-text2{
-    font-size: 25px;
-  }
-  .available-text{
-    font-size: 15px;
-    flex-wrap: wrap;
-  }
-  .download-buttons-2 {
-    flex-direction: column;
-    align-items: center;
+
+  .desktop {
+    height: auto;
+    padding: 20px;
   }
 
-  .download-button-2   {
-    width: 30%;
-    margin: 10px 0;
+  .download-text2 {
+    font-size: 28px;
+  }
+
+  .available-text {
+    font-size: 18px;
+  }
+
+  .download-buttons-2 {
+    gap: 5px;
+  }
+
+  .download-button-2,
+  .download-button-transparent-2 {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
   }
 }
 
@@ -478,7 +462,7 @@ h6{
   }
 
   .text-container {
-    width: 5  0%;
+    width: 50%;
     text-align: left;
   }
 
