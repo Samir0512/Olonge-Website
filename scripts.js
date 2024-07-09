@@ -3,9 +3,9 @@ function toggleMenu() {
   var overlay = document.getElementById("overlay");
   if (sidebar.style.right === "-250px") {
     sidebar.style.right = "0";
-    overlay.style.display = "block"; // Show overlay
+    overlay.style.display = "block"; 
   } else {
     sidebar.style.right = "-250px";
-    overlay.style.display = "none"; // Hide overlay
+    overlay.style.display = "none"; 
   }
 }
