@@ -148,7 +148,6 @@ nav ul li a:hover {
   color: #fa4a0c;
 }
 
-/* Section Containers */
 #HR,
 #how-it-works {
   margin-top: 40px;
@@ -184,25 +183,17 @@ nav ul li a:hover {
 .container-tel2-reverse {
   display: flex;
   align-items: center;
-  margin: 20px 0;
+
 }
 
-.container-tel2 .image-container,
-.container-tel2-reverse .image-container {
-  width: 400px;
-  height: 525px;
-  margin-right: 20px;
-}
 
-.container-tel2-reverse .image-container {
-  margin-right: 0;
-  margin-left: 20px;
-}
+
+
 
 .image-container img {
   width: 100%;
   height: 100%;
-}
+} 
 
 .text-container {
   width: 568px;
