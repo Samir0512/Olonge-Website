@@ -13,11 +13,6 @@
   <header>
     <div class="container header-content">
         <a href="#"><img class="logo" src="/assets/img/logo.png" alt="Logo"></a>
-        <div class="hamburger-menu" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
         <nav>
             <ul id="nav-links">
                 <li><a href="#">Home</a></li>
@@ -26,18 +21,24 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line"></span>
+            </label>
+        </div>
     </div>
-    <div id="sidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+    <div class="sidebar" id="sidebar">
       <a href="#">Home</a>
       <a href="#">About</a>
       <a href="#">Services</a>
       <a href="#">Contact</a>
-    </div>
-    <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+    </div>    
+    <div id="overlay" onclick="closeSidebar()"></div>
   </header>
-
- 
 
   <main>
     <section id="home" class="full-width">
